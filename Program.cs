@@ -4,10 +4,14 @@ class MainClass
 {
    public static void Main(string[] args)
    {
-	  string myName = "Alyona";
-	  byte age = 18;
-	  bool pet = true;
-	  double shoeSize = 46.5;
-	  Console.WriteLine("My name is {0}\nMy age is {1}\nDo I have a pet? {2}\nMy shoe size is {3}", myName, age, pet, shoeSize);
+	  Console.Write("Enter your name: ");
+	  var name = Console.ReadLine();
+	  Console.Write("Enter your age: ");
+	  var age = Convert.ToInt32(Console.ReadLine());
+	  Console.WriteLine("Your name is {0} and age is {1} ", name, age);
+	  Console.Write("Enter your birthdate: ");
+	  var birthdate = Console.ReadLine();
+	  Console.WriteLine("Your birthdate is {0}", birthdate);
+	  Console.ReadKey();
    }
 }
